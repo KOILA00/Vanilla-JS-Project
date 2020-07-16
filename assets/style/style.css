@@ -1,8 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    text-decoration: none;
-    list-style: none;
 }
 
 html, body {
@@ -12,19 +10,73 @@ html, body {
 
 .wrap {
     height: 100%;
-    background-color: black;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+} 
+
+h1 {
+    font-size: 10vw;
 }
 
-.wrap h1 {
-    color: white;
-    font-size: 5vw;
+form {
+    width: 100%;
 }
 
-.wrap h2 {
+.flex_wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+}
+
+input {
+    width: 100%;
+    font-size: 2vw;
+    background-color: transparent;
+    border: none;
+    border-bottom: 0.1vw solid white;
+    margin-top: 10%;   
+}
+
+input::placeholder, input:focus {
+    text-align: center;
     color: white;
-    font-size: 3vw;
+}
+
+.js-form,
+.greeting {
+    display: none;
+}
+
+.showing {
+    display: block;
+}
+
+@keyframes fadeIn{
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.bgImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    animation: fadeIn 0.5s linear;
+}
+
+h1, h2, h3, h4, h5, p, span {
+    color: white;
+}
+
+h4 {
+    font-size: 2vw;
 }
